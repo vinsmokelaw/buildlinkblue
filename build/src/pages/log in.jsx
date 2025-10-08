@@ -8,7 +8,7 @@ import {
   FaEye,
   FaEyeSlash
 } from 'react-icons/fa';
-import './Log_in.css';
+import './log_in.css';
 
 const Login = () => {
   const [username, setUsername] = useState('');
