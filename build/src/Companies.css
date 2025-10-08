@@ -1,0 +1,469 @@
+/* HERO IMAGE SECTION */
+.companies-hero-container {
+  width: 100%;
+  height: 90vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.companies-hero-box {
+  width: 95%;
+  height: 100%;
+  border-radius: 12px;
+  background-image: url('./assets/ak.jpg'); /* update if needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  border: 1px solid white
+  ;
+  
+}
+
+/* TEXT SECTION BELOW */
+.companies-text-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+}
+
+.companies-text {
+  max-width: 800px;
+  text-align: center;
+  font-family: '  Poppins', sans-serif;
+}
+
+.companies-text h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+  
+}
+
+.companies-text p {
+  font-size: 18px;
+  font-weight: 100;
+  color: black;
+  line-height: 1.6;
+  width: 650px;
+  
+}
+.hero-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 200px; /* adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
+  background-color: white;
+  padding: 4px;
+  z-index: 10;
+}
+
+.single-service-section {
+  padding: 6rem 2rem;
+  
+  font-family: 'Poppins', sans-serif;
+}
+
+.single-service-content {
+  display: flex;
+  flex-direction: row; /* THIS keeps text + image side by side */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 3rem;
+}
+
+.single-service-text {
+  flex: 1 1 50%;
+  width: 200px;
+  font-size: large;
+}
+
+.single-service-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.single-service-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .single-service-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .single-service-text,
+  .single-service-image {
+    flex: 1 1 100%;
+  }
+}
+.why-ak-section {
+  padding: 6rem 2rem;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.why-ak-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.why-ak-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.why-ak-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.why-ak-text {
+  flex: 1 1 50%;
+}
+
+.why-ak-text h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.why-ak-text p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.why-ak-text ul {
+  padding-left: 20px;
+  color: #444;
+  list-style-type: disc;
+}
+
+.why-ak-text li {
+  font-size: 16px;
+  margin-bottom: 0.6rem;
+}
+
+/* Responsive stacking */
+@media screen and (max-width: 768px) {
+  .why-ak-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-ak-text,
+  .why-ak-image {
+    flex: 1 1 100%;
+  }
+}
+
+.gallery-section {
+  padding: 6rem 2rem;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.gallery-header h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.gallery-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 2px solid orange;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-grid img {
+    max-width: 90%;
+  }
+}
+
+.post-job-section {
+  padding: 6rem 2rem;
+  background-color: #fefefe;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post-job-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.post-job-left,
+.post-job-right {
+  flex: 1 1 45%;
+}
+
+.post-job-left h2 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 2rem;
+}
+
+.post-job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #444;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  margin-top: 2rem;
+  background-color: orange;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: darkorange;
+}
+
+@media screen and (max-width: 768px) {
+  .post-job-wrapper {
+    flex-direction: column;
+  }
+
+  .post-job-left,
+  .post-job-right {
+    width: 100%;
+  }
+}
+.post-job-section {
+  padding: 4rem 2rem;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.post-job-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.post-job-left,
+.post-job-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.post-job-left h2 {
+  font-size: 32px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  position: relative;
+  top: -80px;
+  right: -350px;
+  width: 500px;
+
+}
+.post-job-left h3 {
+  font-size: 22px;
+    position: relative;
+    top: -50px;
+    right: -460px;
+ }
+.post-job-left p{
+ position: relative;
+  top: -50px;
+  right: -450px;
+}
+
+.post-job-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.post-job-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.post-job-form input,
+.post-job-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  background-color: orange;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  position: relative;
+  left: 250px;
+}
+
+.submit-btn:hover {
+  background-color: #e07b00;
+}
+
+.job-filter-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  top: 190px;
+  right: -80px;
+  /* gap: 40px; */
+}
+
+/* Make filter options align horizontally */
+.job-filter-group .job-filter-option {
+  display: inline-flex; /* inline + flex for horizontal alignment */
+  /* align-items: center; */
+  gap: 10px;
+
+  background-color: #e4e4e3;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 12px; /* space between pills */
+  margin-bottom: 8px; /* wrap to next line if needed */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #000;
+  width: auto; /* let width fit content */
+}
+.job-filter-group h4{
+  font-weight: 300;
+  font-size: medium;
+}
+
+.job-filter-option:hover {
+  background-color: #d1d1cf;
+}
+
+.job-filter-option.selected {
+  background-color: orange;
+  color: #000;
+  font-weight: 600;
+}
+
+.checkbox-box {
+  width: 18px;
+  height: 18px;
+  /* border: 2px solid #000; */
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.job-filter-option.selected .checkbox-box {
+  background-color: orange;
+  border-color: orange;
+}
+
+.checkmark {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 0;
+}

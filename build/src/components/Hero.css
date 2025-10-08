@@ -1,0 +1,99 @@
+.hero {
+  position: relative;
+  padding: 6rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://i.pinimg.com/736x/0b/35/aa/0b35aa76eec6b544dab843d86f56c364.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 70vh;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 62px;
+  font-weight: 350;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 100%;
+}
+
+.hero p {
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.connect-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border: solid #FEB300;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #FEB300;
+}
+
+.connect-text {
+  padding: 8px 20px;
+  background: white;
+  /*  */
+  border-radius: 8px;
+  color: #FEB300;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100px;
+  line-height: 100%;
+}
+
+.arrow-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #FEB300;
+  border-radius: 8px;
+}
+
+.arrow-icon {
+  transform: rotate(-45deg);
+  stroke: black;
+}

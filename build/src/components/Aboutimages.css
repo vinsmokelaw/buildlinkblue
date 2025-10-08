@@ -1,0 +1,19 @@
+.about-images-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.image-box {
+  padding: 1rem;
+}
+
+.image-box img {
+  border-radius: 16px;
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}

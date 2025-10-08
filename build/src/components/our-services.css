@@ -1,0 +1,80 @@
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  align-items: center;
+}
+p.section-description {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 400px) {
+  .images-row {
+    flex-direction: row;
+  }
+  
+  .images-row img {
+    max-width: 100%;
+  }
+}
+/* Container to align button right */
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-top: 20px; space above button */
+}
+
+
+.con-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  background-color: white;
+  border: 2px solid #FEB300; /* Orange border */
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.con-btn:hover {
+  background-color: #FEB300;  /* Orange bg on hover */
+  border-color: #FEB300;
+}
+
+.con-btn-text {
+  padding: 8px 20px;
+  background-color: white;
+  border-radius: 8px;
+  color: #FEB300;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  width: 120px; /* Controls button text width */
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.con-btn:hover .con-btn-text {
+  color: white; /* Text turns white on hover */
+}
+
+.con-btn-arrow-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #FEB300;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.con-btn:hover .con-btn-arrow-box {
+  background-color: #cc8b00; /* Darker orange on hover */
+}

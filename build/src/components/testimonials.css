@@ -1,0 +1,134 @@
+.testimonials {
+  padding: 4rem 1rem;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.testimonial-slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 12px 0;
+  max-width: 400px;
+  width: 100%;
+  border: 3px solid orange;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s ease;
+  opacity: 0.7;
+  transform: scale(0.95);
+  
+}
+
+.testimonial-card.active {
+  border-image: linear-gradient(45deg, #FEB300, #ff00cc, #00f2ff) 1;
+  border-width: 3px;
+  border-style: solid;
+  opacity: 1;
+  transform: scale(1.05);
+  animation: gradientRotate 5s linear infinite;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #FEB300;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-name {
+  color: #FEB300;
+  font-weight: 600;
+}
+
+/* Animate the gradient */
+@keyframes gradientRotate {
+  0% {
+    border-image-source: linear-gradient(45deg, #FEB300, #ff00cc, #00f2ff);
+  }
+  50% {
+    border-image-source: linear-gradient(135deg, #00f2ff, #FEB300, #ff00cc);
+  }
+  100% {
+    border-image-source: linear-gradient(225deg, #ff00cc, #00f2ff, #FEB300);
+  }
+}
+
+
+.btn-container {
+  display: flex;
+  justify-content: flex-start; /* aligns button to the left */
+  padding-left: 1rem; /* optional */
+}
+
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #FEB300;
+  border-radius: 10px;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  width: auto;
+}
+
+.btnOutline_text {
+  padding: 0 16px;
+  background-color: white;
+  color: #FEB300;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 40px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  white-space: nowrap;
+}
+
+.btnOutline_arrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #FEB300;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btnOutline_arrowBox svg {
+  color: white;
+  width: 18px;
+  height: 18px;
+}

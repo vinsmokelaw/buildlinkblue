@@ -1,0 +1,58 @@
+.pipoL {
+  background-color: orange;
+  width: 100%;
+  max-width: 20rem;
+  height: 23rem;
+  margin: 20px auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column; 
+  overflow: hidden;
+  border: solid 2px white;
+}
+
+.teamImage {
+  width: 100%;
+  height: 90%; /* Top part */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flexDiv {
+  height: 30%; /* Bottom part */
+  background: orange;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* optional: bottom = use flex-end */
+  align-items: flex-start;
+  color: #000;
+  font-weight: bold;
+  /* border: 2px solid white; */
+}
+.flexitems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.orangebutton .intouch {
+  border: 2px solid orange;
+  padding: 12px 30px;
+  background: transparent;
+  color: orange;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.orangebutton .intouch:hover {
+  background: orange;
+  color: white;
+}

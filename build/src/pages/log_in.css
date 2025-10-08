@@ -1,0 +1,182 @@
+/* Full viewport login page with background image */
+.login-page {
+  height: 100vh;
+  background-image: url('../assets/login.jpg'); /* adjust path if needed */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative; /* for overlay */
+  overflow: hidden;
+}
+
+/* Dark transparent overlay for contrast */
+.login-page::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Glassy login card on top */
+.login-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Left side heading text */
+.login-left h2 {
+  margin: 0 0 10px;
+  font-size: 26px;
+}
+
+.login-left p {
+  margin: 0 0 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Form labels and inputs */
+.login-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+/* Password input with toggle eye */
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ddd;
+}
+
+/* Forgot password link */
+.login-options {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.login-options a {
+  font-size: 13px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #ff8c42;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background: #e67e30;
+}
+
+/* Social login section */
+.social-login-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.social-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.google { background-color: #db4437; }
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.linkedin { background-color: #0077b5; }
+
+.social-btn svg {
+  margin-right: 6px;
+}
+/* Remember Me container */
+.remember-me {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ddd;
+  user-select: none;
+}
+
+/* Checkbox styles */
+.remember-me input[type="checkbox"] {
+  margin-right: 8px;
+  position: relative;
+  top: 8px; /* Adjust vertical alignment */
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Optional: label hover effect */
+.remember-me label:hover {
+  color: #fff;
+  cursor: pointer;
+}
